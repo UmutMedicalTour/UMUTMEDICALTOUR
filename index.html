@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UMUT Medical Tour</title>
+  <link rel="icon" type="image/png" href="/images/лого.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header class="hero-section">
+    <img src="images/лого.png" alt="UMUT Medical Tour Logo" class="logo animate-zoom" />
+    
+    <h1 class="animate-fade">Качественная медицина в Турции- напрямую от клиники Medical Park Antalya Hastanesi. </h1>
+    <button class="btn-contact animate-zoom" onclick="openContactForm()">Отправить диагноз →</button>
+    <p class="highlight animate-slide">
+    “Үмүт”медикал тур официально представляет клинику 
+Medical Park Antalya Hasranesi, одной из ведущих медицинских сетей Турции. Мы работаем напрямую с клиникой, без посредников, и помогаем пациентам получить точную медицинскую консультацию, второе мнение или пройти лечение в лучших условиях.
+Наша цель — сделать профессиональную медицину доступной и понятной каждому.
+    </p>
+  </header>
+
+  <section class="accordion-section animate-zoom">
+    <h2 class="animate-fade">Наши Примушества</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Прямой контакт с клиникой
+        </div>
+        <div class="accordion-body">
+          Мы сотрудничаем напрямую с сетью клиник Medical Park. Обеспечим прозрачность, точность и честность на всех этапах взаимодействия.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Оперативность
+        </div>
+        <div class="accordion-body">
+          Мы быстро обрабатываем медицинские документы и направляем их к профильным специалистам — без задержек и очередей. Ответы от врачей — в кратчайшие сроки.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Организация онлайн-консультаций
+        </div>
+        <div class="accordion-body">
+          Вы можете получить профессиональное мнение турецкого врача, не выезжая из страны — мы организуем онлайн-встречу с нужным специалистом.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Честность и открытость
+        </div>
+        <div class="accordion-body">
+          Никаких навязанных услуг и комиссий. Вы заранее знаете стоимость, этапы лечения и возможности клиники.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Поддержка 24/7
+        </div>
+        <div class="accordion-body">
+          Наши координаторы всегда на связи: мы сопровождаем вас на всех этапах — от первого вопроса до возвращения домой.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          ~ Опыт и доверие
+        </div>
+        <div class="accordion-body">
+          Нам доверяют сотни пациентов, которые уже прошли лечение в клинике Медикал Парк Анталия.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="services animate-zoom">
+    <h2 class="animate-fade">Направления</h2>
+    <div class="service-grid">
+      <div class="service-box animate-fade">🧬 Онкология</div>
+      <div class="service-box animate-fade">❤️ Кардиология</div>
+      <div class="service-box animate-fade">🧠 Неврология</div>
+      <div class="service-box animate-fade">🦴 Ортопедия</div>
+      <div class="service-box animate-fade">🫁 Трансплантация органов</div>
+      <div class="service-box animate-fade">💉 Пластическая хирургия</div>
+      <div class="service-box animate-fade">🩺 Гастроэнтерология</div>
+      <div class="service-box animate-fade">🧪 Эндокринология</div>
+    </div>
+  </section>
+
+  <section class="checkups animate-zoom">
+    <h2 class="animate-fade">Чек-апы</h2>
+    <button class="btn-show-checkups animate-zoom" onclick="toggleCheckups()">Показать программы</button>
+    <div id="checkup-list" class="checkup-list hidden"></div>
+  </section>
+
+  <section class="clinic animate-zoom">
+    <h2 class="animate-fade">Клиника Medical Park Antalya Hastanesi</h2>
+
+    <div class="carousel">
+      <button class="carousel-btn prev">←</button>
+      <img id="carousel-image" src="/images/photo1.png" alt="Фото 1">
+      <img id="carousel-image" src="/images/photo2.webp" alt="Фото 2">
+      <img id="carousel-image" src="/images/photo3.webp" alt="Фото 3">
+      <img id="carousel-image" src="/images/photo4.webp" alt="Фото 4">
+      <img id="carousel-image" src="/images/photo5.webp" alt="Фото 5">
+      <img id="carousel-image" src="/images/photo6.jpg" alt="Фото 6">
+      <img id="carousel-image" src="/images/photo7.jpg" alt="Фото 7">
+      <img id="carousel-image" src="/images/photo8.webp" alt="Фото 8">
+      <img id="carousel-image" src="/images/photo9.jpg" alt="Фото 9">
+      <img id="carousel-image" src="/images/photo10.webp" alt="Фото 10">
+      <button class="carousel-btn next">→</button>
+    </div>
+    
+    <p class="animate-slide">
+      Мы сотрудничаем с крупнейшей сетью клиник Турции — Medical Park Antalya Hastanesi. Наши пациенты получают качественное и профессиональное лечение, подтверждённое опытом.
+    </p>
+    <p class="animate-slide">
+      <strong>Адрес:</strong> ОсОО “Үмүт” Медикал Тур, ул. Шевченко 6
+    </p>
+    <p class="animate-slide">
+      <strong>Контакты:</strong> +996 (555) 81 25 88 | +996 (707) 48 51 19 (Махабат)
+    </p>
+    <a href="https://www.instagram.com/umutmedicaltour" class="instagram-link animate-zoom" target="_blank">
+      <img src="images/icons8-instagram-144.png" alt="Instagram" />
+    </a>
+  </section>
+
+  <footer class="footer animate-slide">
+    <p>© 2025 UMUT Medical Tour. Все права защищены.</p>
+    <p>Made by MineCaineYT</p>
+  </footer>
+
+  <a href="https://wa.me/996555812588" class="whatsapp-float animate-zoom" target="_blank">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <script src="/script.js"></script>
+</body>
+</html>

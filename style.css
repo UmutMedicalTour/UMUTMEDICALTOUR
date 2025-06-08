@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #222;
+    scroll-behavior: smooth;
+  }
+  
+  header.hero-section {
+    background: url('../images/header-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 120px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 140px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 12px 20px;
+    border-left: 4px solid #fff;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .btn-contact, .btn-show-checkups {
+    background-color: #b11313;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .btn-contact:hover, .btn-show-checkups:hover {
+    transform: scale(1.05);
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-item {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+    width: 180px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature-detail {
+    display: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .feature-item.active .feature-detail {
+    display: block;
+  }
+  
+  .why-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .service-box {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .service-box:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .checkup-list.hidden {
+    display: none;
+  }
+  
+  .checkup-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .checkup-card {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .checkup-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .animate-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-zoom {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .animate-zoom.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .clinic-photo {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .instagram-link img {
+    width: 30px;
+    margin-top: 10px;
+  }
+  
+  .footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .whatsapp-float img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header.hero-section {
+    background: url('/images/фондляначало.jpeg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 120px;
+    position: relative;
+  }
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  
+  .accordion-header {
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #eee;
+    position: relative;
+  }
+  
+  .accordion-header:hover {
+    background: #e3e3e3;
+  }
+  
+  .accordion-body {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .accordion-item.active .accordion-body {
+    padding: 15px 20px;
+    max-height: 300px;
+  }
+
+  .carousel {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel img.fade-out {
+    opacity: 0;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    user-select: none;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  }
+  
