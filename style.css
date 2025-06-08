@@ -203,6 +203,7 @@ header.hero-section {
   padding: 80px 20px 120px;
   position: relative;
 }
+background: url('images/фондляначало.jpeg') center/cover no-repeat;
 
 
   
@@ -345,5 +346,28 @@ header.hero-section {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  header.hero-section {
+    background-position: center top;
+    padding: 60px 10px 80px;
+    min-height: 100vh;
+  }
+
+  .hero-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .highlight {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .btn-contact {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
 
   
