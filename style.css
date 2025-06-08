@@ -192,13 +192,14 @@ body {
     height: 50px;
   }
 
-  header.hero-section {
-    background-image: url('images/фондляначало.jpeg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 80px 20px 120px;
-    position: relative;
-  }
+header.hero-section {
+  background: url('images/фондляначало.jpeg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px 120px;
+  position: relative;
+}
+
   
   .accordion {
     display: flex;
