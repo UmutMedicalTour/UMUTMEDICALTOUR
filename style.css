@@ -283,4 +283,61 @@ body {
   .carousel-btn.next {
     right: 10px;
   }
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-item, .service-box, .checkup-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-contact, .btn-show-checkups {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .accordion-header {
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  .highlight {
+    font-size: 0.9rem;
+  }
+
+  .clinic-photo {
+    width: 100%;
+  }
+}
+
   
