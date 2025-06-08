@@ -194,12 +194,16 @@ body {
 
 header.hero-section {
   background: url('images/фондляначало.jpeg') center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   color: white;
   text-align: center;
   padding: 80px 20px 120px;
   position: relative;
-  min-height: 100vh;
 }
+
 
   
   .accordion {
