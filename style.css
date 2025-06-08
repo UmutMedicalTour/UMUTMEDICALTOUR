@@ -369,5 +369,33 @@ background: url('images/фондляначало.jpeg') center/cover no-repeat;
   }
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    display: block !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .whatsapp-float img {
+    width: 50px;
+    height: 50px;
+  }
+}
 
   
