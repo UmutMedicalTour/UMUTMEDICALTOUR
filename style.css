@@ -193,7 +193,7 @@ body {
   }
 
   header.hero-section {
-    background: url('/images/фондляначало.jpeg') center/cover no-repeat;
+    background: url('images/фондляначало.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 80px 20px 120px;
